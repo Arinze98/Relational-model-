@@ -1,0 +1,21 @@
+  Hotel
+  ------
+| HotelID |---------< Room
+| Name    |            ------
+| Address |  >-------| RoomID   |
+| Tel     |           | RoomNumber|
+  ------             | Type      |
+                     | Price     |
+                     | HotelID   |
+                       ------
+
+  Guest
+  ------
+| GuestID |---------< Booking
+| LastName|            ------
+| FirstName|  >-------| BookingID |
+| Address |           | DateFrom  |
+| Tel     |           | DateTo    |
+  ------             | GuestID   |
+                     | RoomID    |
+                       ------
